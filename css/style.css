@@ -176,6 +176,7 @@ p {
     text-align:center;
     width: 0;
     height: 0;
+    max-width: 100%;
     border-top: 30px solid #181A1C;
     border-left: 585px outset transparent;
     border-right: 585px outset transparent;
@@ -908,8 +909,54 @@ p {
         margin-top:30px;
     }
    
+    .vid-container {
+        position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+      float:left;
+      }
 
+     .vid-list-container {
+        margin: 0 auto;
+        width: 100px;
+      height:360px;
+        overflow: hidden;
+      float:left;
+      }
+
+      
 }
+
+@media (max-width: 600px) {
+    .map-canvas{
+        height: 300px;
+    }
+    .info-mail {
+        width:90%;
+        padding:15px 0px;
+    }
+    .project-description {
+        padding-left:20px;
+    }
+    .price-column, .testimonial {
+        margin-top:30px;
+    }
+   
+    .vid-container {
+        position: relative;
+        padding-bottom: 56.25%;
+        padding-top: 30px; height: 0; overflow: hidden;
+      float:left;
+      }
+
+     .vid-list-container {
+        margin: 0 auto;
+        width: 100px;
+      height:360px;
+        overflow: hidden;
+      float:left;
+      }
+    }
 
 #playlist, audio{
     background:#666;
@@ -968,11 +1015,11 @@ p {
 }
 
 .vid-main-wrapper {
-    width: 100%;
-    max-width: 1100px;
-    min-width: 400px;
-    background:none;
-    margin: 0 auto;
+    position: relative;
+    padding-bottom: 56.25%; /* 16/9 ratio */
+    padding-top: 30px; /* IE6 workaround*/
+    height: 0;
+    overflow: hidden;
 }
 
 
@@ -1004,7 +1051,7 @@ float:left;
   width: 30%;
 height:360px;
   overflow: hidden;
-float:right;
+float:left;
 }
 
 .vid-list-container:hover, .vid-list-container:focus {
@@ -1049,3 +1096,10 @@ background:#3A3A3A;
 }
 
 
+.video-responsive {
+    position: relative;
+    padding-bottom: 56.25%; /* 16/9 ratio */
+    padding-top: 30px; /* IE6 workaround*/
+    height: 0;
+    overflow: hidden;
+    }

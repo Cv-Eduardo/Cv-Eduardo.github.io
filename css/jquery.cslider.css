@@ -15,6 +15,7 @@
 }
 
 .da-slider .triangle{
+    
     clear: none;
     top:0;
     z-index:999;
@@ -170,6 +171,7 @@
 }
 .da-arrows span.da-arrows-prev {
     left: 15px;
+    max-width: 100%;
     background:transparent url(../images/Left.png) no-repeat center center;
 }
 .da-arrows span.da-arrows-next {
