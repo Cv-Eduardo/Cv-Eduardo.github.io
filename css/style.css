@@ -893,6 +893,10 @@ p {
     }
 }
 @media (max-width: 767px) {
+
+    .map-canvas{
+        height: 400px;
+    }
     .info-mail {
         width:90%;
         padding:15px 0px;
@@ -903,6 +907,8 @@ p {
     .price-column, .testimonial {
         margin-top:30px;
     }
+   
+
 }
 
 #playlist, audio{
