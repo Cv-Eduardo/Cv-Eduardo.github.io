@@ -17,7 +17,7 @@
       });
       
     var ply = document.getElementById('audio');
-    ply.src = "";
+    ply.src = "https://firebasestorage.googleapis.com/v0/b/cv-ecabrera.appspot.com/o/carta%20de%20presentacion%20con%20musica.wav?alt=media&token=fd9aa4cf-38d2-4e1e-ab9c-636f000ce600";
     ply.volume=0.5;
     var lastId,
     topMenu = $("#top-navigation"),
@@ -114,7 +114,9 @@
             menuItems
             .parent().removeClass("active")
             .end().filter("[href=#" + id + "]").parent().addClass("active");
-            
+            if (id !=="audios" ) {
+                ply.pause();
+                } 
         }
     });
 
@@ -132,7 +134,7 @@
     $(window).load(function () {
        
         var ply = document.getElementById('audio');
-        ply.src = "https://firebasestorage.googleapis.com/v0/b/vue-edu.appspot.com/o/carta%20de%20presentacion.mp3?alt=media&token=1629b907-92b4-4e5f-826e-f5244db0dbdc"
+        ply.src = "https://firebasestorage.googleapis.com/v0/b/cv-ecabrera.appspot.com/o/carta%20de%20presentacion%20con%20musica.wav?alt=media&token=fd9aa4cf-38d2-4e1e-ab9c-636f000ce600"
         function filterPath(string) {
             return string.replace(/^\//, '').replace(/(index|default).[a-zA-Z]{3,4}$/, '').replace(/\/$/, '');
         }
@@ -434,6 +436,7 @@ function init(){
     var audio = document.getElementById('audio');
     var playlist = document.getElementById('playlist');
     var tracks = playlist.getElementsByTagName('a');
+    audio.src = "https://firebasestorage.googleapis.com/v0/b/cv-ecabrera.appspot.com/o/carta%20de%20presentacion%20con%20musica.wav?alt=media&token=fd9aa4cf-38d2-4e1e-ab9c-636f000ce600";
     audio.volume = 0.10;
     audio.play();
     
