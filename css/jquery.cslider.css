@@ -1318,7 +1318,8 @@
         margin:0;
         font-size:12px;
         top:150px; 
-    }  
+    } 
+    
 }
 
 @media (max-width: 480px) {
@@ -1338,4 +1339,5 @@
     .da-slide .da-link {
         display:none;
     } 
+    
 }
