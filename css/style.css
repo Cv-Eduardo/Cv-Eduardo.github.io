@@ -895,7 +895,7 @@ p {
 @media (max-width: 767px) {
 
     .map-canvas{
-        height: 400px;
+        height: 300px;
     }
     .info-mail {
         width:90%;
