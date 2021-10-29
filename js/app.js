@@ -438,7 +438,7 @@ function init(){
     var tracks = playlist.getElementsByTagName('a');
     audio.src = "https://firebasestorage.googleapis.com/v0/b/cv-ecabrera.appspot.com/o/carta%20de%20presentacion%20con%20musica.wav?alt=media&token=fd9aa4cf-38d2-4e1e-ab9c-636f000ce600";
     audio.volume = 0.10;
-    audio.play();
+    
     
     //Agregamos los eventos a los links que nos permitirán cambiar de canción
     for(var track in tracks) {
