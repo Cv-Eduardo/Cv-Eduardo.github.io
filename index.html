@@ -566,6 +566,7 @@
         <div class="section primary-section" id="about">
             <div class="triangle"></div>
             <div class="container">
+               
                 <div class="title">
                     <h1>Who We Are?</h1>
                     <p>Duis mollis placerat quam, eget laoreet tellus tempor eu. Quisque dapibus in purus in dignissim.</p>
@@ -710,7 +711,7 @@
               
                    
                     <br><br/>
-                    
+                   
                        
                   
                     
@@ -792,7 +793,7 @@
                     <p> He procesado estos audios con SSLM (lenguaje de sistesis de voz) en la nube de Microsoft Azure </p>
                     
                    
-                    <audio id="audio" controls class="da-link"
+                    <audio id="audio" controls class="da-link">
                 
 
                         <source src="/audio/inicio.mp3"  type="audio/mp3">
@@ -836,6 +837,7 @@
                 <div class="price-table row-fluid">
                     <div class="span4 price-column">
                         <h3>Basic</h3>
+                       
                         <ul class="list">
                             <li class="price">$19,99</li>
                             <li><strong>Free</strong> Setup</li>
@@ -901,49 +903,31 @@
         <!-- Newsletter section end -->
         <!-- Contact section start -->
         <div id="contact" class="contact">
+           
             <div class="section secondary-section">
+                
                 <div class="container">
+                   
+                    
                     <div class="title">
+                        
                         <h1>Contact Us</h1>
-                        <p>Duis mollis placerat quam, eget laoreet tellus tempor eu. Quisque dapibus in purus in dignissim.</p>
+                        <br>
+                       
+                </div>
+                <div class="d-flex justify-content-center">
+                    <button class="btn btn-success btn-lg " data-toggle="modal" data-target="#modalForm">
+                        Abrir Formulario de Contacto
+                    </button>
                     </div>
+                   
                 </div>
                 <div class="map-wrapper">
+                   
                     <div class="map-canvas" id="map-canvas">Loading map...</div>
+                   
                     <div class="container">
-                        <div class="row-fluid">
-                            <div class="span5 contact-form centered">
-                                <h3>Say Hello</h3>
-                                <div id="successSend" class="alert alert-success invisible">
-                                    <strong>Well done!</strong>Your message has been sent.</div>
-                                <div id="errorSend" class="alert alert-error invisible">There was an error.</div>
-                                <form id="contact-form" action="php/mail.php">
-                                    <div class="control-group">
-                                        <div class="controls">
-                                            <input class="span12" type="text" id="name" name="name" placeholder="* Your name..." />
-                                            <div class="error left-align" id="err-name">Please enter name.</div>
-                                        </div>
-                                    </div>
-                                    <div class="control-group">
-                                        <div class="controls">
-                                            <input class="span12" type="email" name="email" id="email" placeholder="* Your email..." />
-                                            <div class="error left-align" id="err-email">Please enter valid email adress.</div>
-                                        </div>
-                                    </div>
-                                    <div class="control-group">
-                                        <div class="controls">
-                                            <textarea class="span12" name="comment" id="comment" placeholder="* Comments..."></textarea>
-                                            <div class="error left-align" id="err-comment">Please enter your comment.</div>
-                                        </div>
-                                    </div>
-                                    <div class="control-group">
-                                        <div class="controls">
-                                            <button id="send-mail" class="message-btn">Send message</button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
                 <div class="container">
@@ -1033,12 +1017,97 @@
        
        
         <script  type="text/javascript" src="js/app.js"></script>
-       
+         
         
-        
+        <div class="modal fade" id="modalForm" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <!-- Modal Cabecera -->
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">&times;</span>
+                            <span class="sr-only">Cerrar</span>
+                        </button>
+                        <h4 class="modal-title" id="myModalLabel">Formulario de Contacto</h4>
+                    </div>
+                    
+                    <!-- Modal Cuerpo contenido -->
+                    <div class="modal-body">
+                        <p class="statusMsg"></p>
+                        <form role="form">
+                            <div class="form-group">
+                                <label for="inputName">Nombre</label>
+                                <input type="text" class="form-control" id="inputName" placeholder="Ingrese su nombre"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputEmail">Email</label>
+                                <input type="email" class="form-control" id="inputEmail" placeholder="Ingrese su email"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputMessage">Mensaje</label>
+                                <textarea class="form-control" id="inputMessage" placeholder="Ingrese su mensaje"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    
+                    <!-- Modal Pie de Página -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary submitBtn" onclick="EnviarFormulario()">Enviar Ahora</button>
+                    </div>
+                </div>
+            </div>
+        </div>
         
           
-              
+        <script>
+            function EnviarFormulario(){
+                var reg = /^[A-Z0-9._%+-]+@([A-Z0-9-]+\.)+[A-Z]{2,4}$/i;
+                var name = $('#inputName').val();
+                var email = $('#inputEmail').val();
+                var message = $('#inputMessage').val();
+                if(name.trim() == '' ){
+                    alert('Por Favor ingrese su nombre.');
+                    $('#inputName').focus();
+                    return false;
+                }else if(email.trim() == '' ){
+                    alert('Por favor ingrese su email.');
+                    $('#inputEmail').focus();
+                    return false;
+                }else if(email.trim() != '' && !reg.test(email)){
+                    alert('Por favor ingrese un email valido.');
+                    $('#inputEmail').focus();
+                    return false;
+                }else if(message.trim() == '' ){
+                    alert('Por favor ingrese su mensaje.');
+                    $('#inputMessage').focus();
+                    return false;
+                }else{
+                    $.ajax({
+                        type:'POST',
+                        url:'/EnviarForm.php',
+                        data:'ContactoEnviar=1&name='+name+'&email='+email+'&message='+message,
+                        beforeSend: function () {
+                            $('.submitBtn').attr("disabled","disabled");
+                            $('.modal-body').css('opacity', '.5');
+                        },
+                        success:function(msg){
+                            if(msg == 'bien'){
+                                $('#inputName').val('');
+                                $('#inputEmail').val('');
+                                $('#inputMessage').val('');
+                                $('.statusMsg').html('<span style="color:green;">Gracias por contactarnos, nos pondremos en contacto con usted pronto.</p>');
+                            }else{
+                                $('.statusMsg').html('<span style="color:red;">Ha ocurrido algún problema, por favor intente de nuevo.</span>');
+                            }
+                            $('.submitBtn').removeAttr("disabled");
+                            $('.modal-body').css('opacity', '');
+                        }
+                    });
+                }
+            }
+            </script>
+            
 
               
        

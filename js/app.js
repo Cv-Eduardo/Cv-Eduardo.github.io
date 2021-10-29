@@ -114,6 +114,7 @@
             menuItems
             .parent().removeClass("active")
             .end().filter("[href=#" + id + "]").parent().addClass("active");
+            
         }
     });
 
@@ -411,11 +412,12 @@ function initializeMap() {
     var marker = new google.maps.Marker({
         map: map,
         position: new google.maps.LatLng(lat, lon),
-
+        
     });
 
     var infowindow = new google.maps.InfoWindow({
         content: "Villanueva de la Cañada (Madrid)"
+        
     });
 
     google.maps.event.addListener(marker, 'click', function () {
@@ -423,6 +425,7 @@ function initializeMap() {
     });
 
     infowindow.open(map, marker);
+    
 }
 
 init();
