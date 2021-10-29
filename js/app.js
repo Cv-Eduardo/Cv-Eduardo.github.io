@@ -402,7 +402,7 @@ function initializeMap() {
         scrollwheel: false,
         draggable: false,
         disableDefaultUI: true,
-        center: new google.maps.LatLng(lat, centerLon),
+        center: new google.maps.LatLng(lat, lon),
         zoom: 15,
         mapTypeId: google.maps.MapTypeId.ROADMAP
     };
@@ -416,7 +416,7 @@ function initializeMap() {
     });
 
     var infowindow = new google.maps.InfoWindow({
-        content: "Villanueva de la Cañada (Madrid)"
+        content: " C/Luna 27 - Villanueva de la Cañada (Madrid)"
         
     });
 
