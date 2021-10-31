@@ -851,6 +851,9 @@ p {
         border-radius:40px;
         line-height: 80px;
     }
+    #movil{
+        display: none;
+    }
 }
 @media (max-width: 979px) {
     body {
@@ -899,6 +902,9 @@ p {
     .newsletter form {
         text-align:center;
     }
+    #movil{
+        display: inline;
+    }
 }
 @media (max-width: 767px) {
 
@@ -930,11 +936,12 @@ p {
         overflow: hidden;
       float:left;
       }
+    
 
       
 }
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
     .map-canvas{
         height: 300px;
     }
@@ -963,6 +970,7 @@ p {
         overflow: hidden;
       float:left;
       }
+    
     }
 
 #playlist, audio{
