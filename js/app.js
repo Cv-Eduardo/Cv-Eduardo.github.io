@@ -8,13 +8,7 @@
 
    
      
-    $('.vid-item').each(function(index){
-        $(this).on('click', function(){
-          var current_index = index+1;
-          $('.vid-item .thumb').removeClass('active');
-          $('.vid-item:nth-child('+current_index+') .thumb').addClass('active');
-        });
-      });
+   
       
     var ply = document.getElementById('audio');
     ply.src = "https://firebasestorage.googleapis.com/v0/b/cv-ecabrera.appspot.com/o/carta%20de%20presentacion%20con%20musica.wav?alt=media&token=fd9aa4cf-38d2-4e1e-ab9c-636f000ce600";
