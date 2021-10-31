@@ -936,6 +936,10 @@ p {
         overflow: hidden;
       float:left;
       }
+      .contact-info {
+        text-align:center;
+        font-size:18px;
+    }
     
 
       
@@ -970,6 +974,10 @@ p {
         overflow: hidden;
       float:left;
       }
+      .contact-info {
+        text-align:center;
+        font-size:18px;
+    }
     
     }
 
