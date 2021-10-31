@@ -17,6 +17,9 @@
         <meta name="robots" content="follow"/>
         <meta http-equiv="cache-control" content="no-cache"/>
         <meta name="google" content="notranslate" />
+
+       
+        <link rel="preload" as="video" type="video/mp4" href="/video/video.mp4" />
         <!-- Load Roboto font -->
         <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
         <!-- Load css styles -->
@@ -86,7 +89,7 @@
             
             <!-- Start cSlider -->
             <div id="da-slider" class="da-slider">
-                <video id="videopresentacion"  autoplay muted loop preload>
+                <video id="videopresentacion" poster="images/videoposter.png" preload="true" autoplay muted loop >
                     <source src="video/video.mp4" type="video/mp4">
                 </video>
                

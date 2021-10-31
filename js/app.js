@@ -30,6 +30,8 @@
            
         });
 
+       
+
     //Get width of container
     var containerWidth = $('.section .container').width();
     //Resize animated triangle
