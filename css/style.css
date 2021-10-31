@@ -36,6 +36,7 @@ body {
     line-height:20px;
    
 }
+
 a {
     color:#181A1C;
     text-decoration: none;
@@ -944,6 +945,7 @@ p {
 .map-wrapper{
     display: none;
 }
+
       
 }
 
@@ -983,6 +985,7 @@ p {
     .map-wrapper{
         display: none;
     }
+    
     }
 
 #playlist, audio{
@@ -1130,5 +1133,4 @@ background:#3A3A3A;
     height: 0;
     overflow: hidden;
     }
-
     
