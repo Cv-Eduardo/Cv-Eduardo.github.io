@@ -1,3 +1,5 @@
+
+
 .da-slider {
     width: 100%;
     min-width: 320px;
@@ -5,7 +7,6 @@
     position: relative;
     margin:0 auto;
     overflow: hidden;
-   
     background-size:auto 100%;
     -webkit-transition: background-position 1s ease-out 0.3s;
     -moz-transition: background-position 1s ease-out 0.3s;
@@ -35,6 +36,7 @@
     margin-top:-30px;
     position:relative;
     height:100%;
+   
 }
 .da-slide {
     position: absolute;
@@ -1317,8 +1319,19 @@
     .da-slide .da-link{
         margin:0;
         font-size:12px;
-        top:150px; 
+        top:80px; 
     } 
+    .da-dots {
+        display:none;
+    } 
+
+    .da-arrows {
+        display:none;
+    } 
+
+    .da-slide h4 {
+        display: none;
+     }
     
 }
 
@@ -1336,8 +1349,24 @@
         display:none;
     } 
     
-    .da-slide .da-link {
+    .da-slide .da-link{
+        margin:0;
+        font-size:12px;
+        top:80px; 
+    } 
+
+    .da-dots {
         display:none;
     } 
+
+    .da-arrows {
+        display:none;
+    } 
+
+    .da-slide h4 {
+       display: none;
+    }
+
+   
     
 }
