@@ -512,6 +512,33 @@ $("#soporte").click(function() {
 
 
 
+function changeVid(clicked_id)
+                    {
+
+                        var newVid = "https://www.youtube.com/embed/K8V29IcnnjE";
+                        
+                        if(clicked_id === 'vid1'){
+                            newVid = 'https://www.youtube.com/embed/K8V29IcnnjE';
+                        }
+                         if(clicked_id === 'vid2'){
+                            newVid = "/video/tarjeta.mp4";
+                        }
+                         if(clicked_id === 'vid3'){
+                            newVid = "https://player.vimeo.com/video/113616778";
+                        }
+                         if(clicked_id === 'vid4'){
+                            newVid = "https://player.vimeo.com/video/113614567";
+                        }
+                         if(clicked_id === 'vid5'){
+                            newVid = "https://player.vimeo.com/video/113614447";
+                        }
+                         if(clicked_id === 'vid6'){
+                            newVid = "https://player.vimeo.com/video/113614297";
+                        }
+
+                        document.getElementById('player1').src = newVid;
+                    }
+var $allVideos = $("iframe[src^='//player.vimeo.com'], iframe[src^='//www.youtube.com']");
 
 
 
