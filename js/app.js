@@ -513,17 +513,17 @@ $("#soporte").click(function() {
 
 
 
-
 function changeVid(clicked_id)
                     {
-
-                        var newVid = "https://firebasestorage.googleapis.com/v0/b/vue-edu.appspot.com/o/madre2.mp4?alt=media&token=417c02ad-d9a5-4c8f-8850-cbac6c2b2305";
+                        
+                        var newVid = "https://firebasestorage.googleapis.com/v0/b/cv-ecabrera.appspot.com/o/El%20proceso.mp4?alt=media&token=6ddaa39c-9436-4522-9010-655a685d300e";
                         
                         if(clicked_id === 'vid1'){
-                            newVid = "https://firebasestorage.googleapis.com/v0/b/vue-edu.appspot.com/o/madre2.mp4?alt=media&token=417c02ad-d9a5-4c8f-8850-cbac6c2b2305";
+                            newVid = "https://firebasestorage.googleapis.com/v0/b/cv-ecabrera.appspot.com/o/El%20proceso.mp4?alt=media&token=6ddaa39c-9436-4522-9010-655a685d300e";
                         }
                          if(clicked_id === 'vid2'){
-                            newVid = "https://player.vimeo.com/video/133509734";
+                            newVid = "https://www.youtube.com/embed/ngawT3lFl08";
+                           
                         }
                          if(clicked_id === 'vid3'){
                             newVid = "https://player.vimeo.com/video/113616778";
@@ -539,12 +539,25 @@ function changeVid(clicked_id)
                         }
 
                         document.getElementById('player1').src = newVid;
+                        document.getElementById("poster-image").style.visibility="hidden";
+                        
                     }
 var $allVideos = $("iframe[src^='//player.vimeo.com'], iframe[src^='//www.youtube.com']");
 
 
 
    
+document.getElementById("poster-image").onclick = function() { fadeImage() };
+
+
+function fadeImage() {
+  document.getElementById("poster-image").style.visibility="hidden"
+  $("#player1")[0].src += "&autoplay=1";
+  ev.preventDefault();
+}
+
+
+  
 
 
 
