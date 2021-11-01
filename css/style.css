@@ -923,24 +923,27 @@ p {
         margin-top:30px;
     }
    
-    .vid-container {
-        position: relative;
-    padding-bottom: 56.25%;
-    padding-top: 30px; height: 0; overflow: hidden;
-      float:left;
+    .thumbnaile-containery {
+       
+         width: 340px;
+         height: 60px;
       }
-
-     .vid-list-container {
-        margin: 0 auto;
-        width: 100px;
-      height:360px;
-        overflow: hidden;
-      float:left;
+      .videoWrapper iframe {
+      
+          width: 340px;
+          height: 200px;
       }
       .contact-info {
         text-align:center;
         font-size:18px;
     }
+
+    #poster-image {
+      
+      height: 200px;
+      width: 340px;
+transition: all 0.3s ease-in;
+}
     
 .map-wrapper{
     display: none;
@@ -964,27 +967,27 @@ p {
         margin-top:30px;
     }
    
-    .vid-container {
-        position: relative;
-        padding-bottom: 56.25%;
-        padding-top: 30px; height: 0; overflow: hidden;
-      float:left;
-      }
+    .thumbnaile-containery {
+       
+        width: 340px;
+        height: 60px;
+     }
+     .contact-info {
+       text-align:center;
+       font-size:18px;
+   }
+   .videoWrapper iframe {
+      
+    width: 340px;
+    height: 200px;
+}
 
-     .vid-list-container {
-        margin: 0 auto;
-        width: 100px;
-      height:360px;
-        overflow: hidden;
-      float:left;
-      }
-      .contact-info {
-        text-align:center;
-        font-size:18px;
-    }
-    .map-wrapper{
-        display: none;
-    }
+   #poster-image {
+     
+     height: 200px;
+     width: 340px;
+transition: all 0.3s ease-in;
+}
     
     }
 
@@ -1178,8 +1181,8 @@ background:#3A3A3A;
         margin-left: auto;
         margin-right: auto;
          
-          width: 350px;
-          height: 250px;
+          width: 450px;
+          height: 300px;
       }
       .thumbnaile > figure:hover {
           cursor: pointer;
@@ -1190,7 +1193,7 @@ background:#3A3A3A;
   margin-left: auto;
   margin-right: auto;
          padding-top: 5px;
-         width: 350px;
+         width: 450px;
          height: 60px;
       }
       .thumbnaile{
@@ -1282,7 +1285,7 @@ background:#3A3A3A;
           right: 0;
           top: 0;
           z-index: 10;
-          height: 250px;
-          width: 350px;
+          height: 300px;
+          width: 450px;
 transition: all 0.3s ease-in;
 }
