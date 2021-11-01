@@ -520,7 +520,7 @@ function changeVid(clicked_id)
                         var newVid = "https://firebasestorage.googleapis.com/v0/b/vue-edu.appspot.com/o/madre2.mp4?alt=media&token=417c02ad-d9a5-4c8f-8850-cbac6c2b2305";
                         
                         if(clicked_id === 'vid1'){
-                            newVid = 'https://firebasestorage.googleapis.com/v0/b/vue-edu.appspot.com/o/madre2.mp4?alt=media&token=417c02ad-d9a5-4c8f-8850-cbac6c2b2305';
+                            newVid = "https://firebasestorage.googleapis.com/v0/b/vue-edu.appspot.com/o/madre2.mp4?alt=media&token=417c02ad-d9a5-4c8f-8850-cbac6c2b2305";
                         }
                          if(clicked_id === 'vid2'){
                             newVid = "https://player.vimeo.com/video/133509734";
