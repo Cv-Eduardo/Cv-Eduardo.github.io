@@ -1269,3 +1269,38 @@ background:#3A3A3A;
           width: 320px;
 transition: all 0.3s ease-in;
 }
+
+
+
+.gallery {
+	display: flex;
+	flex-wrap:wrap;
+    
+
+   
+   
+	/* Compensate for excess margin on outer gallery flex items */
+	margin: -1rem -1rem;
+}
+
+.gallery-item {
+	/* Minimum width of 24rem and grow to fit available space */
+	flex: 1 0 10rem;
+	/* Margin value should be half of grid-gap value as margins on flex items don't collapse */
+	margin: 1rem;
+   
+	overflow: hidden;
+}
+
+.gallery-image {
+	display: block;
+	width: 100%;
+	height: auto;
+    max-width: 200px;
+	object-fit: cover;
+	transition: transform 400ms ease-out;
+}
+
+.gallery-image:hover {
+	transform: scale(1.15);
+}

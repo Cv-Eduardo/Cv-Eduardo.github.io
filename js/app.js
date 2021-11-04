@@ -6,8 +6,14 @@
  */
  jQuery(document).ready(function ($) {
 
-   
-     
+    document.getElementById("video1").onclick = function() { video1() };
+    function video1() {
+        $.sweetModal({
+            title: 'Will YouTube Ever Run Out Of Video IDs?',
+            content: 'https://www.youtube.com/watch?v=gocwRvLhDf8',
+            theme: $.sweetModal.THEME_DARK
+        });
+    }
    
       
     var ply = document.getElementById('audio');
@@ -555,6 +561,10 @@ function fadeImage() {
   $("#player1")[0].src += "&autoplay=1";
   ev.preventDefault();
 }
+
+
+
+
 
 
   
