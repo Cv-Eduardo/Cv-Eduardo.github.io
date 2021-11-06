@@ -909,6 +909,7 @@ p {
 }
 @media (max-width: 767px) {
 
+    
     .triangle{
         visibility: hidden;
     }
@@ -943,6 +944,8 @@ p {
 
 @media (max-width: 480px) {
 
+    
+    
     .triangle{
         visibility: hidden;
     }
@@ -971,36 +974,8 @@ p {
     
     }
 
-#playlist, audio{
-    background:#666;
-    max-width: 300px;
-    padding:10px;
-    list-style: none;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  #audio{
-    background:#666;
-    max-width: 400px;
-    padding:10px;
-    list-style: none;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  a {
-    text-decoration:none;
-  }
-  .active a {
-    color:#5DB0E6;
-    text-decoration:none;
-  }
-  li a{
-    color:#eeeedd;
-    background:#333;
-    padding:5px;
-    display:block;
-  }
-  li a:hover{
-    text-decoration:none;
-  }
+
+ 
 
   
   
@@ -1275,6 +1250,7 @@ transition: all 0.3s ease-in;
 .gallery {
 	display: flex;
 	flex-wrap:wrap;
+  
     
 
    
@@ -1288,7 +1264,7 @@ transition: all 0.3s ease-in;
 	flex: 1 0 10rem;
 	/* Margin value should be half of grid-gap value as margins on flex items don't collapse */
 	margin: 1rem;
-   
+  
 	overflow: hidden;
 }
 
@@ -1303,4 +1279,50 @@ transition: all 0.3s ease-in;
 
 .gallery-image:hover {
 	transform: scale(1.15);
+}
+
+.videoseccion {
+    width: 82%    !important;
+    height: auto   !important;
+  padding-right:8% ;
+  padding-left: 8%;
+  }
+
+  .img-overlay {
+  position: relative;
+  width:25%;
+}
+
+.img-overlay-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(0,0,0,.5);
+}
+
+.img-overlay:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
 }

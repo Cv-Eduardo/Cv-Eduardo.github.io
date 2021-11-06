@@ -44,7 +44,19 @@
         <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57.png">
         <link rel="shortcut icon" href="images/ico/favicon.ico">
        
+       
 
+        <!-- Custom styles for this template -->
+      
+        
+         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+         <link rel="stylesheet" href="https://www.musetemplatespro.com/preview/codecan/musicplaylistjs/css/musicPlaylist.min.css">
+        
+        
+        
+      
+  
+    
        
        
         
@@ -53,7 +65,7 @@
    
     
     <body >
-        <div class="navbar">
+        <div id="nv" class="navbar">
             <div class="navbar-inner">
                 <div class="container">
                     <a href="#" class="brand">
@@ -187,7 +199,7 @@
                     <div class="span4">
                         <div class="centered service">
                             <div class="circle-border zoom-in">
-                                <img class="img-circle" id="soporte" src="images/Service3.png" alt="service 3" data-swap='/images/soporte.png' data-src='images/Service3.png'>
+                                <img class="img-circle" id="soporte" src="images/Service3.png" alt="service 3" data-swap='/images/eduardo2.png' data-src='images/Service3.png'>
                             </div>
                             <h3>IT technical support</h3>
                             <p style=" padding-bottom: 3rem">soluciones a problemas de red, software & hardware más comunes en el ambito empresarial.</p>
@@ -666,12 +678,15 @@
                 
                 <div class="gallery ">
 
-                    <div class="gallery-item ">
-                        <img class="gallery-image justify-content-center" id="video1"  src="images/el proceso.jpg">
+                    <div class="gallery-item " id="video1">
+                        <img class="gallery-image img-overlay-image "   src="images/el proceso.png" >
+                       
                     </div>
+                   
             
-                    <div class="gallery-item">
-                        <img class="gallery-image" src="https://images.unsplash.com/photo-1515260268569-9271009adfdb?w=500&h=500&fit=crop" alt="sunset behind San Francisco city skyline">
+                    <div class="gallery-item " id="video2">
+                        <img class="gallery-image img-overlay-image "   src="/images/mejora_continua.png" alt="sunset behind San Francisco city skyline">
+                        
                     </div>
             
                     <div class="gallery-item">
@@ -710,60 +725,97 @@
         <!-- Audios section start -->
         <div id="Audios" class="section secondary-section">
            
-            <div class="container">
-                <div class="title">
-                    <h2>Audios</h2>
-                    <p> He procesado estos audios con SSLM (lenguaje de sistesis de voz) en la nube de Microsoft Azure </p>
-                    
-                   
-                    <audio id="audio" controls class="da-link">
-                
-
-                        <source src="/audio/inicio.mp3"  type="audio/mp3">
-                 
-                        <source src="miaudio.ogg"  type="audio/ogg">
-                 
-                        <source src="miaudio.wav"  type="audio/wav">
-                 
-                 Este es un elemento de audio no soportado por tu navegador, prueba con otro
-                 
-                 </audio>
-
-                 <ul id="playlist" class="centered service">
-                    <li class="active">
-                       <a href="https://firebasestorage.googleapis.com/v0/b/cv-ecabrera.appspot.com/o/carta%20de%20presentacion%20con%20musica.wav?alt=media&token=fd9aa4cf-38d2-4e1e-ab9c-636f000ce600">
-                        Carta de presentación
-                       </a>
-                    </li>
-                    <li>
-                        <a href="https://firebasestorage.googleapis.com/v0/b/cv-ecabrera.appspot.com/o/mis%20primeros%20a%C3%B1os%20con%20musica.mp3?alt=media&token=e07e7820-c2fe-43db-9a14-fa758fb25b87">
-                            Mis primeros años
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://firebasestorage.googleapis.com/v0/b/cv-ecabrera.appspot.com/o/mis%20a%C3%B1os%20de%20autonomo%20con%20musica.mp3?alt=media&token=2b614562-7aed-46fd-821c-2beb81e9775e">
-                            La experiencia de ser autónomo
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://firebasestorage.googleapis.com/v0/b/cv-ecabrera.appspot.com/o/mis%20ultimas%20ocupaciones.mp3?alt=media&token=bed82895-8a56-4eda-93c8-948bddc91d38">
-                            Mis últimas ocupaciones
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://firebasestorage.googleapis.com/v0/b/cv-ecabrera.appspot.com/o/mi%20formacion%20con%20musica.mp3?alt=media&token=fbc277f8-e9af-47b7-8a29-ab07ecb9a978">
-                            La formación determinante
-                        </a>
-                    </li>
-                </ul>
-                <br>
-                <br>
-                <br>
+<!-- Page Content -->
+<div class="container class="da-link" id="audio">
+    
+    <div class="title">
+       
+        <p> He procesado estos audios con SSLM (lenguaje de sistesis de voz) en la nube de Microsoft Azure </p>
+        
+       
               
-                </div>
-                
-                
-            </div>
+     
+       
+
+     
+    
+  
+    </div>
+
+    <!-- Page Heading -->
+    
+     
+    
+   
+    <center><ul id="playlist" style="min-width: 100%;" >
+      <li track="https://firebasestorage.googleapis.com/v0/b/cv-ecabrera.appspot.com/o/carta%20de%20presentacion%20con%20musica.wav?alt=media&token=fd9aa4cf-38d2-4e1e-ab9c-636f000ce600" cover="/images/lector.png" title="Carta de presentación"></li>
+      <li track="https://firebasestorage.googleapis.com/v0/b/cv-ecabrera.appspot.com/o/mis%20primeros%20a%C3%B1os%20con%20musica.mp3?alt=media&token=e07e7820-c2fe-43db-9a14-fa758fb25b87" cover="images/primeros.png" title="Mis primeros años"></li>
+      <li track="https://firebasestorage.googleapis.com/v0/b/cv-ecabrera.appspot.com/o/mis%20a%C3%B1os%20de%20autonomo%20con%20musica.mp3?alt=media&token=2b614562-7aed-46fd-821c-2beb81e9775e" cover="/images/cabrera.jpg" title="La experiencia de ser autónomo"></li>
+      <li track="https://www.musetemplatespro.com/preview/codecan/musicplaylistjs/assets/song4.mp3" cover="https://www.musetemplatespro.com/preview/codecan/musicplaylistjs/assets/artwork4.jpg" title="Artist Name - Song Title4"></li>
+      <li track="https://www.musetemplatespro.com/preview/codecan/musicplaylistjs/assets/song5.mp3" cover="https://www.musetemplatespro.com/preview/codecan/musicplaylistjs/assets/artwork5.jpg" title="Artist Name - Song Title5"></li>
+  </ul></center>
+    
+    <br>
+    
+    <hr><br>
+    
+    
+  </div>
+  <!-- /.container -->
+  
+  
+  
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://www.musetemplatespro.com/preview/codecan/musicplaylistjs/vendor/jquery/jquery.min.js"></script>
+  
+  
+  <!-- Plugin JavaScript -->
+  <script src="https://www.musetemplatespro.com/preview/codecan/musicplaylistjs/vendor/jquery-easing/jquery.easing.min.js"></script>
+  
+  <script src="https://www.musetemplatespro.com/preview/codecan/musicplaylistjs/js/scrolling-nav.js"></script>
+  <script src="https://www.musetemplatespro.com/preview/codecan/musicplaylistjs/js/musicPlaylist.min.js"></script>
+  
+  <script>
+     
+  $('#playlist').musicPlaylist({
+
+      //Main Options
+      playerWidth: '70%', // Player width. Set it in percents (%) to make it responsive or in pixels (px) to make it fixed width
+      
+      playerColor: '#000', // Player background color
+      playerOpacity: '0.8', // Player and playlist background opacity: 0.1 - 1
+      iconColor: '#fff', // Player icons color
+      slidersBackgroundColor: '#333333', // Time and volume sliders background color
+      slidersValueColor: '#FF0000', // Time and volume sliders active color
+      playerSize: 'big', // Tracks artwork size: big, small
+      titleSize: '15px', // Tracks title size
+      titleColor: '#fff', // Tracks title color
+      titleFontFamily: 'arial', // Tracks title font
+      startingVolume: '100', // Initial player volume: 0 - 100
+
+      //Playlist Options  
+      
+      showPlayList: 'show', // Show playlist initially: show, hide
+      trackImageSize: '40px', // Tracks artwork size in the playlist
+      trackTextColor: '#fff', // Tracks title color in the playlist
+      trackTextSize: '14px', // Tracks title size in the playlist
+      trackFontFamily: 'arial', // Tracks title font in the playlist
+      playlistColor: '#4c4c4c', // Playlist background color
+      activeTrackBackground: '#525252', // Active track in the playlist color
+      activeTrackTextColor: '#fff', // Active track title color in the playlist
+      separatorColor: '#000', // Tracks separator color
+  });
+
+  
+  </script>
+  
+  
+  
+
+
+            
+            
         </div>
         <!-- Price section end -->
         <!-- Newsletter section start -->
@@ -845,7 +897,7 @@
         <script type="text/javascript" src="js/jquery.cslider.js"></script>
         <script type="text/javascript" src="js/jquery.placeholder.js"></script>
         <script type="text/javascript" src="js/jquery.inview.js"></script>
-        <script src="js/jquery.sweet-modal.min.js"></script>
+        <script src="js/jquery.sweet-modal.js"></script>
        
        
         <!-- Load google maps api and call initializeMap function defined in app.js -->

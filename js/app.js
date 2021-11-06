@@ -6,19 +6,40 @@
  */
  jQuery(document).ready(function ($) {
 
-    document.getElementById("video1").onclick = function() { video1() };
-    function video1() {
+    
+    var video1 = document.getElementById("video1");
+
+    video1.addEventListener('click',()=>{
+        
+        
         $.sweetModal({
-            title: 'Will YouTube Ever Run Out Of Video IDs?',
-            content: 'https://www.youtube.com/watch?v=gocwRvLhDf8',
-            theme: $.sweetModal.THEME_DARK
-        });
-    }
+            title: '<img src="images/logo.png" style="float:left; padding-right:10%" width="100" height="40" alt="Logo Eduardo Cabrera Blázquez" /><h6 style="display: inline-block;vertical-align: top;">El proceso.  Un video de Eduardo Cabrera &copy;</h6>',
+            content: '<video class="videoseccion" src="https://firebasestorage.googleapis.com/v0/b/cv-ecabrera.appspot.com/o/El%20proceso.mp4?alt=media&token=6ddaa39c-9436-4522-9010-655a685d300e" controls autoplay ></video>',
+            theme: $.sweetModal.THEME_DARK,
+                      
+        })
+    
+    })
+
+    var video2 = document.getElementById("video2");
+
+    video2.addEventListener('click',()=>{
+        
+        
+        $.sweetModal({
+            title: 'prueba video2',
+            content: 'https://www.youtube.com/watch?v=ngawT3lFl08',
+            theme: $.sweetModal.THEME_DARK,
+                      
+        })
+    
+    })
+
+
+    
    
       
-    var ply = document.getElementById('audio');
-    ply.src = "https://firebasestorage.googleapis.com/v0/b/cv-ecabrera.appspot.com/o/carta%20de%20presentacion%20con%20musica.wav?alt=media&token=fd9aa4cf-38d2-4e1e-ab9c-636f000ce600";
-    ply.volume=0.5;
+    
     var lastId,
     topMenu = $("#top-navigation"),
     topMenuHeight = topMenu.outerHeight(),
@@ -116,8 +137,9 @@
             menuItems
             .parent().removeClass("active")
             .end().filter("[href=#" + id + "]").parent().addClass("active");
-            if (id !=="audios" ) {
-                ply.pause();
+            if (id !=="Audios" ) {
+                $('#pause').click();
+                
                 } 
         }
     });
@@ -135,8 +157,7 @@
 
     $(window).load(function () {
        
-        var ply = document.getElementById('audio');
-        ply.src = "https://firebasestorage.googleapis.com/v0/b/cv-ecabrera.appspot.com/o/carta%20de%20presentacion%20con%20musica.wav?alt=media&token=fd9aa4cf-38d2-4e1e-ab9c-636f000ce600"
+       
         function filterPath(string) {
             return string.replace(/^\//, '').replace(/(index|default).[a-zA-Z]{3,4}$/, '').replace(/\/$/, '');
         }
@@ -561,6 +582,9 @@ function fadeImage() {
   $("#player1")[0].src += "&autoplay=1";
   ev.preventDefault();
 }
+
+
+
 
 
 
