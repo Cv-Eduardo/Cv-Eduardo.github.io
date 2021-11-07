@@ -1,11 +1,15 @@
 'use strict';
 
+
+var panel="abierto"
+
 /*
 * A Design by Eduardo Cabrera Blázquez
  * Resumen de vida laboral (año 2021)
  */
  jQuery(document).ready(function ($) {
 
+   ocultarimagenplayer();
     
     var video1 = document.getElementById("video1");
 
@@ -36,8 +40,36 @@
     })
 
 
+  
+    jQuery('#play').click(function(){ 
+       
+        if (panel=="cerrado"){
+            $('#mini').click();
+           
+        }
+   });
+
+   jQuery('#mini').click(function(){ 
+       
+    if (panel=="cerrado"){
+        panel="abierto";
+            }else{
+                panel="cerrado"
+            }
+});
+  
+   jQuery('#pause').click(function(){ 
+    if (panel=="abierto"){
+        $('#mini').click();
+       
+    }
     
-   
+    
+});
+  
+
+  
+
       
     
     var lastId,
@@ -138,11 +170,27 @@
             .parent().removeClass("active")
             .end().filter("[href=#" + id + "]").parent().addClass("active");
             if (id !=="Audios" ) {
+               
                 $('#pause').click();
                
+               
+             
+               
+               
                 
+               
+               
+                 
+              
                 
-                } 
+   
+               
+                
+                 }else{
+                  primeravez="si"
+                   // $('#audio-img').hide();
+                   // $('#mini').hide();
+                 } 
         }
     });
 
@@ -160,6 +208,7 @@
     $(window).load(function () {
        
        
+    
         function filterPath(string) {
             return string.replace(/^\//, '').replace(/(index|default).[a-zA-Z]{3,4}$/, '').replace(/\/$/, '');
         }
@@ -578,14 +627,53 @@ var $allVideos = $("iframe[src^='//player.vimeo.com'], iframe[src^='//www.youtub
    
 
 
+jQuery("#animated-thumbnails-gallery")
+  .justifiedGallery({
+    captions: false,
+    lastRow: "hide",
+    rowHeight: 180,
+    margins: 5
+  })
+  .on("jg.complete", function () {
+    window.lightGallery(
+      document.getElementById("animated-thumbnails-gallery"),
+      {
+        autoplayFirstVideo: false,
+        pager: false,
+        galleryId: "nature",
+        plugins: [lgZoom, lgThumbnail],
+        mobileSettings: {
+          controls: false,
+          showCloseIcon: false,
+          download: false,
+          rotate: false
+        }
+      }
+    );
+  });
+
+ 
 
 
+  function ocultarimagenplayer() {
+   
+    $('#mini').click()
+    panel="cerrado"
+    
+  }
 
+  function pulsarli() {
+   
+    if (panel=="cerrado"){
+        $('#mini').click();
+       
+       
+    }
 
+   
+  }
 
-
-
-
+ 
 
 
   
