@@ -139,6 +139,8 @@
             .end().filter("[href=#" + id + "]").parent().addClass("active");
             if (id !=="Audios" ) {
                 $('#pause').click();
+               
+                
                 
                 } 
         }
@@ -566,7 +568,7 @@ function changeVid(clicked_id)
                         }
 
                         document.getElementById('player1').src = newVid;
-                        document.getElementById("poster-image").style.visibility="hidden";
+                       
                         
                     }
 var $allVideos = $("iframe[src^='//player.vimeo.com'], iframe[src^='//www.youtube.com']");
@@ -574,14 +576,9 @@ var $allVideos = $("iframe[src^='//player.vimeo.com'], iframe[src^='//www.youtub
 
 
    
-document.getElementById("poster-image").onclick = function() { fadeImage() };
 
 
-function fadeImage() {
-  document.getElementById("poster-image").style.visibility="hidden"
-  $("#player1")[0].src += "&autoplay=1";
-  ev.preventDefault();
-}
+
 
 
 
