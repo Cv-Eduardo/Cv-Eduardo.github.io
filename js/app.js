@@ -3,6 +3,8 @@
 
 var panel="abierto"
 
+
+
 /*
 * A Design by Eduardo Cabrera Blázquez
  * Resumen de vida laboral (año 2021)
@@ -676,7 +678,7 @@ jQuery("#animated-thumbnails-gallery")
  
 
 
-  
+ 
 
 
 
