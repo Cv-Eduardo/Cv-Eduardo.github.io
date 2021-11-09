@@ -33,8 +33,51 @@ var panel="abierto"
         
         
         $.sweetModal({
-            title: 'prueba video2',
+            title: '<img src="images/logo.png" style="float:left; padding-right:10%" width="100" height="40" alt="Logo Eduardo Cabrera Blázquez" /><h6 style="display: inline-block;vertical-align: top;">Kai Zen. La mejora continua</h6>',
             content: 'https://www.youtube.com/watch?v=ngawT3lFl08',
+            theme: $.sweetModal.THEME_DARK,
+                      
+        })
+    
+    })
+
+    var video3 = document.getElementById("video3");
+
+    video3.addEventListener('click',()=>{
+        
+        
+        $.sweetModal({
+            title: '<img src="images/logo.png" style="float:left; padding-right:10%" width="100" height="40" alt="Logo Eduardo Cabrera Blázquez" /><h6 style="display: inline-block;vertical-align: top;"> MOOC Universitat Oberta de Catalunya</h6>',
+            content: 'https://www.youtube.com/watch?v=Jev4IxQ9vzs',
+            theme: $.sweetModal.THEME_DARK,
+                      
+        })
+    
+    })
+
+    var imagen1 = document.getElementById("imagen1");
+
+    imagen1.addEventListener('click',()=>{
+        
+        
+        $.sweetModal({
+            title: '<img src="images/logo.png" style="float:left; padding-right:10%" width="100" height="40" alt="Logo Eduardo Cabrera Blázquez" /><h4 style="display: inline-block;vertical-align: top;">Creatividad y pensamiento lateral</h4>',
+            content: '<center><img  src="/images/pensamiento_lateral.png">',
+            theme: $.sweetModal.THEME_DARK,
+                      
+        })
+    
+    })
+
+
+    var imagen2 = document.getElementById("imagen2");
+
+    imagen2.addEventListener('click',()=>{
+        
+        
+        $.sweetModal({
+            title: '<img src="images/logo.png" style="float:left; padding-right:10%" width="100" height="40" alt="Logo Eduardo Cabrera Blázquez" /><h4 style="display: inline-block;vertical-align: top;">Productividad personal en la era digital</h4>',
+            content: '<center><img src="/images/curso_productividad.jpg">',
             theme: $.sweetModal.THEME_DARK,
                       
         })
@@ -629,30 +672,7 @@ var $allVideos = $("iframe[src^='//player.vimeo.com'], iframe[src^='//www.youtub
    
 
 
-jQuery("#animated-thumbnails-gallery")
-  .justifiedGallery({
-    captions: false,
-    lastRow: "hide",
-    rowHeight: 180,
-    margins: 5
-  })
-  .on("jg.complete", function () {
-    window.lightGallery(
-      document.getElementById("animated-thumbnails-gallery"),
-      {
-        autoplayFirstVideo: false,
-        pager: false,
-        galleryId: "nature",
-        plugins: [lgZoom, lgThumbnail],
-        mobileSettings: {
-          controls: false,
-          showCloseIcon: false,
-          download: false,
-          rotate: false
-        }
-      }
-    );
-  });
+
 
  
 
@@ -676,6 +696,8 @@ jQuery("#animated-thumbnails-gallery")
   }
 
  
+
+  
 
 
  
