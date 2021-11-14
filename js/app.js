@@ -84,13 +84,28 @@ var panel="abierto"
     
     })
 
+    var imagen3 = document.getElementById("imagen3");
+
+    imagen3.addEventListener('click',()=>{
+        
+        
+        $.sweetModal({
+            title: '<img src="images/logo.png" style="float:left; padding-right:10%" width="100" height="40" alt="Logo Eduardo Cabrera Blázquez" /><h4 style="display: inline-block;vertical-align: top;">Dispositivos Tcp-Ip. - Programación Cliente-Servidor</h4>',
+            content: '<center><img src="/images/accesos2.png">',
+            theme: $.sweetModal.THEME_DARK,
+                      
+        })
+    
+    })
+
+
     var imagen4 = document.getElementById("imagen4");
 
     imagen4.addEventListener('click',()=>{
         
         
         $.sweetModal({
-            title: '<img src="images/logo.png" style="float:left; padding-right:10%" width="100" height="40" alt="Logo Eduardo Cabrera Blázquez" /><h4 style="display: inline-block;vertical-align: top;">Productividad personal en la era digital</h4>',
+            title: '<img src="images/logo.png" style="float:left; padding-right:10%" width="100" height="40" alt="Logo Eduardo Cabrera Blázquez" /><h4 style="display: inline-block;vertical-align: top;">Mi experiencia como Autónomo</h4>',
             content: '<center><img src="/images/transportes.png">',
             theme: $.sweetModal.THEME_DARK,
                       
