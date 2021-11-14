@@ -84,6 +84,20 @@ var panel="abierto"
     
     })
 
+    var imagen4 = document.getElementById("imagen4");
+
+    imagen4.addEventListener('click',()=>{
+        
+        
+        $.sweetModal({
+            title: '<img src="images/logo.png" style="float:left; padding-right:10%" width="100" height="40" alt="Logo Eduardo Cabrera Blázquez" /><h4 style="display: inline-block;vertical-align: top;">Productividad personal en la era digital</h4>',
+            content: '<center><img src="/images/transportes.png">',
+            theme: $.sweetModal.THEME_DARK,
+                      
+        })
+    
+    })
+
 
   
     jQuery('#play').click(function(){ 
