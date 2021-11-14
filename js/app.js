@@ -105,8 +105,22 @@ var panel="abierto"
         
         
         $.sweetModal({
-            title: '<img src="images/logo.png" style="float:left; padding-right:10%" width="100" height="40" alt="Logo Eduardo Cabrera Blázquez" /><h4 style="display: inline-block;vertical-align: top;">Mi experiencia como Autónomo</h4>',
+            title: '<img src="images/logo.png" style="float:left; padding-right:10%" width="100" height="40" alt="Logo Eduardo Cabrera Blázquez" /><h4 style="display: inline-block;vertical-align: top;">Servicio para empresas homologadas</h4>',
             content: '<center><img src="/images/transportes.png">',
+            theme: $.sweetModal.THEME_DARK,
+                      
+        })
+    
+    })
+
+    var imagen5 = document.getElementById("imagen5");
+
+    imagen5.addEventListener('click',()=>{
+        
+        
+        $.sweetModal({
+            title: '<img src="images/logo.png" style="float:left; padding-right:10%" width="100" height="40" alt="Logo Eduardo Cabrera Blázquez" /><h4 style="display: inline-block;vertical-align: top;">Repositorio web en Github</h4>',
+            content: '<center><img src="/images/github.png">',
             theme: $.sweetModal.THEME_DARK,
                       
         })
