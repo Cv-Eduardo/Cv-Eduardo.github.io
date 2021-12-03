@@ -127,6 +127,20 @@ var panel="abierto"
     
     })
 
+    var imagen6 = document.getElementById("imagen6");
+
+    imagen6.addEventListener('click',()=>{
+        
+        
+        $.sweetModal({
+            title: '<img src="images/logo.png" style="float:left; padding-right:10%" width="100" height="40" alt="Logo Eduardo Cabrera Blázquez" /><h4 style="display: inline-block;vertical-align: top;">CPD Mad-1 NTT Las Rozas de Madrid</h4>',
+            content: '<center><img src="/images/cpd.png">',
+            theme: $.sweetModal.THEME_DARK,
+                      
+        })
+    
+    })
+
 
   
     jQuery('#play').click(function(){ 
