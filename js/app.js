@@ -20,7 +20,7 @@ var panel="abierto"
         
         $.sweetModal({
             title: '<img src="images/logo.png" style="float:left; padding-right:10%" width="100" height="40" alt="Logo Eduardo Cabrera Blázquez" /><h6 style="display: inline-block;vertical-align: top;">El proceso.  Un video de Eduardo Cabrera &copy;</h6>',
-            content: '<video class="videoseccion" src="https://firebasestorage.googleapis.com/v0/b/cv-ecabrera.appspot.com/o/El%20proceso.mp4?alt=media&token=6ddaa39c-9436-4522-9010-655a685d300e" controls autoplay ></video>',
+            content: '<video class="videoseccion" src="https://firebasestorage.googleapis.com/v0/b/cv-ecabrera.appspot.com/o/los%20buenos%20resultados.mp4?alt=media&token=28053233-9362-4443-8b65-72ca259d480a" controls autoplay ></video>',
             theme: $.sweetModal.THEME_DARK,
                       
         })
