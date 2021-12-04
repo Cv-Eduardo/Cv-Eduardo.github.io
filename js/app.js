@@ -55,6 +55,20 @@ var panel="abierto"
     
     })
 
+    var video4 = document.getElementById("video4");
+
+    video4.addEventListener('click',()=>{
+        
+        
+        $.sweetModal({
+            title: '<img src="images/logo.png" style="float:left; padding-right:10%" width="100" height="40" alt="Logo Eduardo Cabrera Blázquez" /><h6 style="display: inline-block;vertical-align: top;"> NTT CPD Mad-1 Las Rozas de Madrid</h6>',
+            content: '<video class="videoseccion" src="https://firebasestorage.googleapis.com/v0/b/cv-ecabrera.appspot.com/o/cpd-mad-1.mp4?alt=media&token=044a26ee-ff98-4a33-bf5d-465914f71292" controls autoplay ></video>', 
+            theme: $.sweetModal.THEME_DARK,
+                      
+        })
+    
+    })
+
     var imagen1 = document.getElementById("imagen1");
 
     imagen1.addEventListener('click',()=>{
