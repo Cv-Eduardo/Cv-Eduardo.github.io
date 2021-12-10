@@ -69,6 +69,20 @@ var panel="abierto"
     
     })
 
+    var video5 = document.getElementById("video5");
+
+    video5.addEventListener('click',()=>{
+        
+        
+        $.sweetModal({
+            title: '<img src="images/logo.png" style="float:left; padding-right:10%" width="100" height="40" alt="Logo Eduardo Cabrera Blázquez" /><h6 style="display: inline-block;vertical-align: top;"> Felíz Navidad</h6>',
+            content: '<video class="videoseccion" src="https://firebasestorage.googleapis.com/v0/b/cv-ecabrera.appspot.com/o/Navidad%202021.mp4?alt=media&token=e7fbaa71-f457-4a57-8d32-d0affd31af46" controls autoplay ></video>', 
+            theme: $.sweetModal.THEME_DARK,
+                      
+        })
+    
+    })
+
     var imagen1 = document.getElementById("imagen1");
 
     imagen1.addEventListener('click',()=>{
