@@ -75,8 +75,8 @@ var panel="abierto"
         
         
         $.sweetModal({
-            title: '<img src="images/logo.png" style="float:left; padding-right:10%" width="100" height="40" alt="Logo Eduardo Cabrera Blázquez" /><h6 style="display: inline-block;vertical-align: top;"> Felíz Navidad</h6>',
-            content: '<video class="videoseccion" src="https://firebasestorage.googleapis.com/v0/b/cv-ecabrera.appspot.com/o/mensaje%20de%20navidad.mp4?alt=media&token=abfdcd95-6cbd-46b6-a25d-1f1cf867b4c9" controls autoplay ></video>', 
+            title: '<img src="images/logo.png" style="float:left; padding-right:10%" width="100" height="40" alt="Logo Eduardo Cabrera Blázquez" /><h6 style="display: inline-block;vertical-align: top;"> Cloud computing</h6>',
+            content: '<video class="videoseccion" src="https://firebasestorage.googleapis.com/v0/b/cv-ecabrera.appspot.com/o/cloud%20computing.mp4?alt=media&token=6bc94103-748d-4fe1-a65e-f809aa791e68" controls autoplay ></video>', 
             theme: $.sweetModal.THEME_DARK,
                       
         })
