@@ -1401,7 +1401,9 @@ transition: all 0.3s ease-in;
     opacity: 0.5;
   }
 
-  
+.click{
+  cursor:pointer;
+}  
 
 
   

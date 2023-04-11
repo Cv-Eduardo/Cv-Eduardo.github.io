@@ -82,6 +82,16 @@ var panel="abierto"
         })
     
     })
+   
+   var video6 = document.getElementById('video6');
+
+   video6.addEventListener('click', () => {
+     $.sweetModal({
+       title:'<img src="images/logo.png" style="float:left; padding-right:10%" width="100" height="40" alt="Logo Eduardo Cabrera Blázquez" /><h6 style="display: inline-block;vertical-align: top;"> Escuela de Talento Digital del Ayuntamiento de Madrid</h6>',
+       content: '<video class="videoseccion" src="https://res.cloudinary.com/dquxfl0fe/video/upload/v1680626696/pruebas/discurso_75_megas_umvjbo.mp4 " controls autoplay ></video>',
+       theme: $.sweetModal.THEME_DARK,
+     });
+   });
 
     var imagen1 = document.getElementById("imagen1");
 
@@ -168,6 +178,17 @@ var panel="abierto"
         })
     
     })
+   
+   var imagen7 = document.getElementById('imagen7');
+
+   imagen7.addEventListener('click', () => {
+     $.sweetModal({
+       title:
+         '<img src="images/logo.png" style="float:left; padding-right:10%" width="100" height="40" alt="Logo Eduardo Cabrera Blázquez" /><h4 style="display: inline-block;vertical-align: top;">Escuela de Talento Digital del Ayuntamiento de Madrid</h4>',
+       content: '<center><img src="/images/python-diploma-peq.png">',
+       theme: $.sweetModal.THEME_DARK,
+     });
+   });
 
 
   
